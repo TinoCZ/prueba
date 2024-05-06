@@ -1,0 +1,44 @@
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Sans&display=swap');
+
+.hero {
+    background-color: #84dac4;
+    padding: 20px;
+    height: 420px;
+  }
+  
+  .hero-container {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  h1{
+          font-family: 'PT Sans', sans-serif;
+        font-size: 40px;
+
+  }
+
+  p{
+          font-family: 'PT Sans', sans-serif;
+
+    padding: 30px;
+    font-size: 20px;
+
+  }
+  
+  /* Otros estilos específicos para el componente Hero si es necesario */
+  
+  @media (max-width: 1024px) {
+    .hero{
+      height: 600px;
+     
+    }
+
+    .hero p{
+      margin: 10px;
+      top: 10px;
+      font-size: 25px;
+    }
+
+    
+  }

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb(155, 151, 151);
+    border-radius: 50px;
+    width: 350px;  
+    height: 170px;
+    max-width: calc(50% - 10px); /* Para que haya dos tarjetas por fila con gap de 20px */
+    background-color: beige;
+    cursor:default;
+  }
+  
+  .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .card-content {
+    flex: 1;
+    
+  }
+  
+  .card-content h2 {
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+  }
+
+  
+
+  .card-content h5 {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .card-content p {
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+.logo-whatsapp{
+    color: green;
+    position: relative;
+    font-size: 14px;
+    left: -1%;
+    margin: -3px;
+    margin-right: 1px;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .card {
+        flex-direction: column; 
+        align-items: center;
+      }
+    
+      .card img {
+        order: 1; 
+        margin-bottom: 10px; 
+        margin-right: 0;
+        margin: 10px;
+      }
+
+      .card{
+        border-radius: 10px;
+        height: 300px;
+      }
+    
+      .card-content {
+        order: 2; 
+        text-align: center; 
+      }
+  }

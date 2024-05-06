@@ -1,0 +1,16 @@
+.card-container{
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1024px) {
+    
+}
