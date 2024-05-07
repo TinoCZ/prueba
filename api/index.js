@@ -7,8 +7,10 @@ const client = new MercadoPagoConfig({
     accessToken: 'APP_USR-7923538825201342-042818-b28e3f01181ccdefaead25a23eefd7d2-452437943',
 })
 
+const port = process.env.PORT || 4000;
+
 const app = express();
-const port = 3000;
+const puerto = 3000;
 
 const cuadernilloUrls = {
     "Manejo de la ansiedad": "https://6637f09f2788c428fa1f40e7--gleaming-selkie-69958e.netlify.app/",
@@ -59,7 +61,7 @@ app.post("/create_preference", async (req, res) => {
 });
 
 
-app.listen(port, ()=> {
+app.listen(puerto, ()=> {
     console.log(`El servidor esta corriendo por ${port}`)
 })
 
