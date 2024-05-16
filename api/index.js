@@ -7,7 +7,6 @@ const client = new MercadoPagoConfig({
     accessToken: 'APP_USR-7923538825201342-042818-b28e3f01181ccdefaead25a23eefd7d2-452437943',
 })
 
-const port = process.env.PORT || 4000;
 
 const app = express();
 const puerto = 3000;
